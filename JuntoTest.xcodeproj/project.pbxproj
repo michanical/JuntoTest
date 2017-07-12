@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC901985A64CC16C5F6D67B /* Pods_JuntoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4922B72515DC1A76E9116C8 /* Pods_JuntoTestTests.framework */; };
+		213D60CF1D2C83071BDB7A9F /* Pods_JuntoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7AF8FF2976AAC2A0A40E5B /* Pods_JuntoTest.framework */; };
+		778669D2E6BF6EC3AA446E7E /* Pods_JuntoTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3696279CC68B3A929301C7C1 /* Pods_JuntoTestUITests.framework */; };
 		B47D3EA91F16651F00BFAEE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D3EA81F16651F00BFAEE9 /* AppDelegate.swift */; };
 		B47D3EAB1F16651F00BFAEE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D3EAA1F16651F00BFAEE9 /* ViewController.swift */; };
 		B47D3EAE1F16651F00BFAEE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47D3EAC1F16651F00BFAEE9 /* Main.storyboard */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E7AF8FF2976AAC2A0A40E5B /* Pods_JuntoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuntoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3696279CC68B3A929301C7C1 /* Pods_JuntoTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuntoTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D7589A8832F33F78DB558D /* Pods-JuntoTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTestUITests/Pods-JuntoTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		615C3DA944F5EA11C23F0903 /* Pods-JuntoTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTestUITests/Pods-JuntoTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8FEEFC06D30877A9BD111CC8 /* Pods-JuntoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTest/Pods-JuntoTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9444CDDC2C3F9BE8B3A09959 /* Pods-JuntoTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTestTests/Pods-JuntoTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		B47D3EA51F16651F00BFAEE9 /* JuntoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuntoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D3EA81F16651F00BFAEE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47D3EAA1F16651F00BFAEE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		B47D3EC41F16652000BFAEE9 /* JuntoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuntoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D3EC81F16652000BFAEE9 /* JuntoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuntoTestUITests.swift; sourceTree = "<group>"; };
 		B47D3ECA1F16652000BFAEE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4922B72515DC1A76E9116C8 /* Pods_JuntoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuntoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD317B8BB8A877CF4E1333C2 /* Pods-JuntoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTest/Pods-JuntoTest.release.xcconfig"; sourceTree = "<group>"; };
+		DB42FC946A7C954BCD41CF46 /* Pods-JuntoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTestTests/Pods-JuntoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213D60CF1D2C83071BDB7A9F /* Pods_JuntoTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC901985A64CC16C5F6D67B /* Pods_JuntoTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778669D2E6BF6EC3AA446E7E /* Pods_JuntoTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77E2737D156A8ACF87438BFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E7AF8FF2976AAC2A0A40E5B /* Pods_JuntoTest.framework */,
+				B4922B72515DC1A76E9116C8 /* Pods_JuntoTestTests.framework */,
+				3696279CC68B3A929301C7C1 /* Pods_JuntoTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DCFFCF2BFA4D7F2F8B9F400 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FEEFC06D30877A9BD111CC8 /* Pods-JuntoTest.debug.xcconfig */,
+				CD317B8BB8A877CF4E1333C2 /* Pods-JuntoTest.release.xcconfig */,
+				DB42FC946A7C954BCD41CF46 /* Pods-JuntoTestTests.debug.xcconfig */,
+				9444CDDC2C3F9BE8B3A09959 /* Pods-JuntoTestTests.release.xcconfig */,
+				47D7589A8832F33F78DB558D /* Pods-JuntoTestUITests.debug.xcconfig */,
+				615C3DA944F5EA11C23F0903 /* Pods-JuntoTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B47D3E9C1F16651F00BFAEE9 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				B47D3EBC1F16652000BFAEE9 /* JuntoTestTests */,
 				B47D3EC71F16652000BFAEE9 /* JuntoTestUITests */,
 				B47D3EA61F16651F00BFAEE9 /* Products */,
+				9DCFFCF2BFA4D7F2F8B9F400 /* Pods */,
+				77E2737D156A8ACF87438BFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B47D3ECD1F16652000BFAEE9 /* Build configuration list for PBXNativeTarget "JuntoTest" */;
 			buildPhases = (
+				B5E665F6208A4DC3AA2E574C /* [CP] Check Pods Manifest.lock */,
 				B47D3EA11F16651F00BFAEE9 /* Sources */,
 				B47D3EA21F16651F00BFAEE9 /* Frameworks */,
 				B47D3EA31F16651F00BFAEE9 /* Resources */,
+				1EE6247C5A20E317E1682112 /* [CP] Embed Pods Frameworks */,
+				00C5F29EEB87AA2059A31830 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B47D3ED01F16652000BFAEE9 /* Build configuration list for PBXNativeTarget "JuntoTestTests" */;
 			buildPhases = (
+				D1EC56FC89D86A8B378E82B5 /* [CP] Check Pods Manifest.lock */,
 				B47D3EB51F16652000BFAEE9 /* Sources */,
 				B47D3EB61F16652000BFAEE9 /* Frameworks */,
 				B47D3EB71F16652000BFAEE9 /* Resources */,
+				0493CFF645036D3EF8DCA71D /* [CP] Embed Pods Frameworks */,
+				6D9CD165CAD3D40BD6DA3228 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B47D3ED31F16652000BFAEE9 /* Build configuration list for PBXNativeTarget "JuntoTestUITests" */;
 			buildPhases = (
+				C81AF251ED9D9BC8C27B60AB /* [CP] Check Pods Manifest.lock */,
 				B47D3EC01F16652000BFAEE9 /* Sources */,
 				B47D3EC11F16652000BFAEE9 /* Frameworks */,
 				B47D3EC21F16652000BFAEE9 /* Resources */,
+				C4EA7E48E1C10FA9021AEE92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,15 +241,18 @@
 				TargetAttributes = {
 					B47D3EA41F16651F00BFAEE9 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B47D3EB81F16652000BFAEE9 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B47D3EA41F16651F00BFAEE9;
 					};
 					B47D3EC31F16652000BFAEE9 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B47D3EA41F16651F00BFAEE9;
 					};
@@ -253,6 +304,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00C5F29EEB87AA2059A31830 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuntoTest/Pods-JuntoTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0493CFF645036D3EF8DCA71D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuntoTestTests/Pods-JuntoTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EE6247C5A20E317E1682112 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuntoTest/Pods-JuntoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9CD165CAD3D40BD6DA3228 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuntoTestTests/Pods-JuntoTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E665F6208A4DC3AA2E574C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4EA7E48E1C10FA9021AEE92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuntoTestUITests/Pods-JuntoTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C81AF251ED9D9BC8C27B60AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1EC56FC89D86A8B378E82B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B47D3EA11F16651F00BFAEE9 /* Sources */ = {
@@ -410,6 +584,7 @@
 		};
 		B47D3ECE1F16652000BFAEE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FEEFC06D30877A9BD111CC8 /* Pods-JuntoTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JuntoTest/Info.plist;
@@ -422,6 +597,7 @@
 		};
 		B47D3ECF1F16652000BFAEE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD317B8BB8A877CF4E1333C2 /* Pods-JuntoTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JuntoTest/Info.plist;
@@ -434,6 +610,7 @@
 		};
 		B47D3ED11F16652000BFAEE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB42FC946A7C954BCD41CF46 /* Pods-JuntoTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +625,7 @@
 		};
 		B47D3ED21F16652000BFAEE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9444CDDC2C3F9BE8B3A09959 /* Pods-JuntoTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +640,7 @@
 		};
 		B47D3ED41F16652000BFAEE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D7589A8832F33F78DB558D /* Pods-JuntoTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = JuntoTestUITests/Info.plist;
@@ -475,6 +654,7 @@
 		};
 		B47D3ED51F16652000BFAEE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615C3DA944F5EA11C23F0903 /* Pods-JuntoTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = JuntoTestUITests/Info.plist;
@@ -505,6 +685,7 @@
 				B47D3ECF1F16652000BFAEE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B47D3ED01F16652000BFAEE9 /* Build configuration list for PBXNativeTarget "JuntoTestTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +694,7 @@
 				B47D3ED21F16652000BFAEE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B47D3ED31F16652000BFAEE9 /* Build configuration list for PBXNativeTarget "JuntoTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +703,7 @@
 				B47D3ED51F16652000BFAEE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
