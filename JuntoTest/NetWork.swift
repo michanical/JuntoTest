@@ -24,8 +24,8 @@ class NetWork: NSObject {
         }
     }
     
-    func parser(data: Data) -> [String:Any] {
-        let json = try? JSONSerialization.jsonObject(with: data) as! [String:Any]
+    func parseJson(data: Data) -> NSDictionary {
+        let json = try? JSONSerialization.jsonObject(with: data) as! NSDictionary
         return json!
     }
     

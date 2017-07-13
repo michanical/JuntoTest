@@ -8,14 +8,14 @@
 
 import Foundation
 
-class Category: NSObject {
+class ProductCategory: NSObject {
     
     var name: String!
     
-    init(name: String) {
+    init(newCategory: NSDictionary) {
         super.init()
         
-        self.name = name
+        self.name = newCategory.value(forKey: "name") as! String
     }
     
 }

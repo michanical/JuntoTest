@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AC901985A64CC16C5F6D67B /* Pods_JuntoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4922B72515DC1A76E9116C8 /* Pods_JuntoTestTests.framework */; };
-		213D60CF1D2C83071BDB7A9F /* Pods_JuntoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7AF8FF2976AAC2A0A40E5B /* Pods_JuntoTest.framework */; };
-		778669D2E6BF6EC3AA446E7E /* Pods_JuntoTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3696279CC68B3A929301C7C1 /* Pods_JuntoTestUITests.framework */; };
 		B47D3EA91F16651F00BFAEE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D3EA81F16651F00BFAEE9 /* AppDelegate.swift */; };
 		B47D3EAB1F16651F00BFAEE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D3EAA1F16651F00BFAEE9 /* ViewController.swift */; };
 		B47D3EAE1F16651F00BFAEE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47D3EAC1F16651F00BFAEE9 /* Main.storyboard */; };
 		B47D3EB01F16651F00BFAEE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47D3EAF1F16651F00BFAEE9 /* Assets.xcassets */; };
 		B47D3EB31F16651F00BFAEE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47D3EB11F16651F00BFAEE9 /* LaunchScreen.storyboard */; };
 		B47D3ED71F16885B00BFAEE9 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D3ED61F16885B00BFAEE9 /* NetWork.swift */; };
-		B48CB0411F17FCA300D35E61 /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CB0401F17FCA300D35E61 /* Categorie.swift */; };
+		B48CB0411F17FCA300D35E61 /* ProductCategorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CB0401F17FCA300D35E61 /* ProductCategorie.swift */; };
+		B48CB0461F1802E700D35E61 /* ProductHunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CB0451F1802E700D35E61 /* ProductHunt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E7AF8FF2976AAC2A0A40E5B /* Pods_JuntoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuntoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3696279CC68B3A929301C7C1 /* Pods_JuntoTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuntoTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7589A8832F33F78DB558D /* Pods-JuntoTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTestUITests/Pods-JuntoTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		615C3DA944F5EA11C23F0903 /* Pods-JuntoTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTestUITests/Pods-JuntoTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8FEEFC06D30877A9BD111CC8 /* Pods-JuntoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTest/Pods-JuntoTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,8 +49,8 @@
 		B47D3EB91F16652000BFAEE9 /* JuntoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuntoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D3EC41F16652000BFAEE9 /* JuntoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuntoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D3ED61F16885B00BFAEE9 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
-		B48CB0401F17FCA300D35E61 /* Categorie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Categorie.swift; path = Model/Categorie.swift; sourceTree = "<group>"; };
-		B4922B72515DC1A76E9116C8 /* Pods_JuntoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuntoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48CB0401F17FCA300D35E61 /* ProductCategorie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductCategorie.swift; path = Model/ProductCategorie.swift; sourceTree = "<group>"; };
+		B48CB0451F1802E700D35E61 /* ProductHunt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductHunt.swift; sourceTree = "<group>"; };
 		CD317B8BB8A877CF4E1333C2 /* Pods-JuntoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTest/Pods-JuntoTest.release.xcconfig"; sourceTree = "<group>"; };
 		DB42FC946A7C954BCD41CF46 /* Pods-JuntoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTestTests/Pods-JuntoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				213D60CF1D2C83071BDB7A9F /* Pods_JuntoTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC901985A64CC16C5F6D67B /* Pods_JuntoTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,23 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778669D2E6BF6EC3AA446E7E /* Pods_JuntoTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		77E2737D156A8ACF87438BFC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0E7AF8FF2976AAC2A0A40E5B /* Pods_JuntoTest.framework */,
-				B4922B72515DC1A76E9116C8 /* Pods_JuntoTestTests.framework */,
-				3696279CC68B3A929301C7C1 /* Pods_JuntoTestUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9DCFFCF2BFA4D7F2F8B9F400 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +99,6 @@
 				B47D3EA71F16651F00BFAEE9 /* JuntoTest */,
 				B47D3EA61F16651F00BFAEE9 /* Products */,
 				9DCFFCF2BFA4D7F2F8B9F400 /* Pods */,
-				77E2737D156A8ACF87438BFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +118,7 @@
 				B47D3EA81F16651F00BFAEE9 /* AppDelegate.swift */,
 				B47D3EAA1F16651F00BFAEE9 /* ViewController.swift */,
 				B47D3ED61F16885B00BFAEE9 /* NetWork.swift */,
+				B48CB0451F1802E700D35E61 /* ProductHunt.swift */,
 				B48CB0421F17FCB100D35E61 /* Model */,
 				B47D3EAC1F16651F00BFAEE9 /* Main.storyboard */,
 				B47D3EAF1F16651F00BFAEE9 /* Assets.xcassets */,
@@ -148,7 +131,7 @@
 		B48CB0421F17FCB100D35E61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B48CB0401F17FCA300D35E61 /* Categorie.swift */,
+				B48CB0401F17FCA300D35E61 /* ProductCategorie.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -423,8 +406,9 @@
 			files = (
 				B47D3EAB1F16651F00BFAEE9 /* ViewController.swift in Sources */,
 				B47D3EA91F16651F00BFAEE9 /* AppDelegate.swift in Sources */,
+				B48CB0461F1802E700D35E61 /* ProductHunt.swift in Sources */,
 				B47D3ED71F16885B00BFAEE9 /* NetWork.swift in Sources */,
-				B48CB0411F17FCA300D35E61 /* Categorie.swift in Sources */,
+				B48CB0411F17FCA300D35E61 /* ProductCategorie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
