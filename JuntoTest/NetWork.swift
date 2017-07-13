@@ -11,7 +11,7 @@ import Alamofire
 
 class NetWork: NSObject {
     
-    func getFromProductHunt(urlString: String) {
+    func getFromProductHunt(urlString: String, completion: @escaping (_ result: Data) -> Void) {
         let headers: HTTPHeaders = [
             "Authorization": "Bearer 591f99547f569b05ba7d8777e2e0824eea16c440292cce1f8dfb3952cc9937ff",
             "Accept": "application/json",
@@ -20,8 +20,13 @@ class NetWork: NSObject {
         ]
         
         Alamofire.request(urlString, headers: headers).responseJSON { response in
-            debugPrint(response)
+            completion(response.data!)
         }
+    }
+    
+    func parser(data: Data) -> [String:Any] {
+        let json = try? JSONSerialization.jsonObject(with: data) as! [String:Any]
+        return json!
     }
     
 }

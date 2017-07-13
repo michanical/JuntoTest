@@ -16,6 +16,7 @@
 		B47D3EB01F16651F00BFAEE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47D3EAF1F16651F00BFAEE9 /* Assets.xcassets */; };
 		B47D3EB31F16651F00BFAEE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47D3EB11F16651F00BFAEE9 /* LaunchScreen.storyboard */; };
 		B47D3ED71F16885B00BFAEE9 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D3ED61F16885B00BFAEE9 /* NetWork.swift */; };
+		B48CB0411F17FCA300D35E61 /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CB0401F17FCA300D35E61 /* Categorie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B47D3EB91F16652000BFAEE9 /* JuntoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuntoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D3EC41F16652000BFAEE9 /* JuntoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuntoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D3ED61F16885B00BFAEE9 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		B48CB0401F17FCA300D35E61 /* Categorie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Categorie.swift; path = Model/Categorie.swift; sourceTree = "<group>"; };
 		B4922B72515DC1A76E9116C8 /* Pods_JuntoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuntoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD317B8BB8A877CF4E1333C2 /* Pods-JuntoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTest/Pods-JuntoTest.release.xcconfig"; sourceTree = "<group>"; };
 		DB42FC946A7C954BCD41CF46 /* Pods-JuntoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTestTests/Pods-JuntoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,12 +136,21 @@
 				B47D3EA81F16651F00BFAEE9 /* AppDelegate.swift */,
 				B47D3EAA1F16651F00BFAEE9 /* ViewController.swift */,
 				B47D3ED61F16885B00BFAEE9 /* NetWork.swift */,
+				B48CB0421F17FCB100D35E61 /* Model */,
 				B47D3EAC1F16651F00BFAEE9 /* Main.storyboard */,
 				B47D3EAF1F16651F00BFAEE9 /* Assets.xcassets */,
 				B47D3EB11F16651F00BFAEE9 /* LaunchScreen.storyboard */,
 				B47D3EB41F16651F00BFAEE9 /* Info.plist */,
 			);
 			path = JuntoTest;
+			sourceTree = "<group>";
+		};
+		B48CB0421F17FCB100D35E61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B48CB0401F17FCA300D35E61 /* Categorie.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +424,7 @@
 				B47D3EAB1F16651F00BFAEE9 /* ViewController.swift in Sources */,
 				B47D3EA91F16651F00BFAEE9 /* AppDelegate.swift in Sources */,
 				B47D3ED71F16885B00BFAEE9 /* NetWork.swift in Sources */,
+				B48CB0411F17FCA300D35E61 /* Categorie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
