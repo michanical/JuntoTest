@@ -37,18 +37,22 @@ class ViewController: UIViewController {
         }
     }
     
-    private func updateProducts() {
-        allProducts.removeAll()
+    @objc private func updateProducts() {
         productHunt.getAllProduct(byCategorieName: currentCategory) {
             (result:[Product]) in
             self.allProducts = result
             self.tableView.reloadData()
+            self.refreshCtrl.endRefreshing()
         }
     }
     
     private func setTableViewSettings() {
         tableView?.register(ProductViewCell.nib, forCellReuseIdentifier:
             ProductViewCell.identifier)
+        refreshCtrl = UIRefreshControl()
+        refreshCtrl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshCtrl.addTarget(self, action: #selector(self.updateProducts), for: .valueChanged)
+        tableView.refreshControl = refreshCtrl
         tableView?.delegate = self
         tableView?.dataSource = self
     }
@@ -66,11 +70,11 @@ class ViewController: UIViewController {
         self.navigationItem.titleView = button
     }
     
-    func clickOnButton(button: UIButton) {
+    @objc private func clickOnButton(button: UIButton) {
         self.changeCategory()
     }
     
-    func changeCategory() {
+    private func changeCategory() {
         let optionMenu = UIAlertController(title: nil, message: "Choose category", preferredStyle: .actionSheet)
         for categorie in allCategories {
             let newAction = UIAlertAction(title: categorie.name, style: .default, handler: {
