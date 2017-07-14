@@ -24,6 +24,7 @@ class ProductViewCell: UITableViewCell {
     @IBOutlet weak var upvotes: UILabel!
     
     func addDataToProductView(product: Product) {
+        self.thumbnail.image = UIImage(named: "Apple_logo_black.svg")
         NetWork().getPictureFromUrl(urlString: product.thumbnailUrl) {
             (result: UIImage) in
             self.thumbnail.image = result

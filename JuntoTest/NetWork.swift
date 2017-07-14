@@ -20,7 +20,11 @@ class NetWork: NSObject {
         ]
         
         Alamofire.request(urlString, headers: headers).responseJSON { response in
-            completion(response.data!)
+            if response.error == nil {
+                completion(response.data!)
+            } else {
+                print(response.error!)
+            }
         }
     }
     

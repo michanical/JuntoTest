@@ -17,16 +17,29 @@ class ViewController: UIViewController {
     var cache:NSCache<AnyObject, AnyObject>!
     
     private var currentCategory = "tech"
+    
     var allProducts = [Product]()
+    private var allCategories = [ProductCategory]()
+    private let productHunt = ProductHunt()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getData()
         self.setTableViewSettings()
+        self.createTitleButton()
     }
     
     private func getData() {
-        ProductHunt().getAllProduct(byCategorieName: currentCategory) {
+        self.updateProducts()
+        productHunt.getAllCategories() {
+            (result:[ProductCategory]) in
+            self.allCategories = result
+        }
+    }
+    
+    private func updateProducts() {
+        allProducts.removeAll()
+        productHunt.getAllProduct(byCategorieName: currentCategory) {
             (result:[Product]) in
             self.allProducts = result
             self.tableView.reloadData()
@@ -44,15 +57,41 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    private func createTitleButton() {
+        let button =  UIButton(type: .custom)
+        button.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
+        button.setTitleColor(.black, for: .normal)
+        button.setTitle("Tech", for: .normal)
+        button.addTarget(self, action: #selector(self.clickOnButton), for: .touchUpInside)
+        self.navigationItem.titleView = button
+    }
+    
+    func clickOnButton(button: UIButton) {
+        self.changeCategory()
+    }
+    
+    func changeCategory() {
+        let optionMenu = UIAlertController(title: nil, message: "Choose category", preferredStyle: .actionSheet)
+        for categorie in allCategories {
+            let newAction = UIAlertAction(title: categorie.name, style: .default, handler: {
+                (alert: UIAlertAction!) -> Void in
+                self.currentCategory = categorie.slug
+                let button = self.navigationItem.titleView as! UIButton
+                button.setTitle(categorie.name, for: .normal)
+                self.updateProducts()
+            })
+            optionMenu.addAction(newAction)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        optionMenu.addAction(cancelAction)
+        self.present(optionMenu, animated: true, completion: nil)
+    }
+    
 }
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("a")
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 190
+        
     }
 }
 
@@ -69,5 +108,9 @@ extension ViewController: UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 190
     }
 }
