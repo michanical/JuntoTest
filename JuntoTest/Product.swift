@@ -12,10 +12,10 @@ class Product: NSObject {
     
     var name: String!
     var tagline: String!
-    var thumbnail: String!
+    var thumbnailUrl: String!
     var upvotes: Int!
-    var website: String!
-    var screenshot: String!
+    var websiteUrl: String!
+    var screenshotUrl: String!
     
     init(newProduct: NSDictionary) {
         super.init()
@@ -23,12 +23,12 @@ class Product: NSObject {
         self.name = newProduct.value(forKey: "name") as! String
         self.tagline = newProduct.value(forKey: "tagline") as! String
         self.upvotes = newProduct.value(forKey: "votes_count") as! Int
-        self.website = newProduct.value(forKey: "redirect_url") as! String
+        self.websiteUrl = newProduct.value(forKey: "redirect_url") as! String
         
         let thubmnailDict = newProduct.value(forKey: "thumbnail") as! NSDictionary
-        self.thumbnail = thubmnailDict.value(forKey: "image_url") as! String
+        self.thumbnailUrl = thubmnailDict.value(forKey: "image_url") as! String
         let screenshotDict = newProduct.value(forKey: "screenshot_url") as! NSDictionary
-        self.screenshot = screenshotDict.value(forKey: "850px") as! String
+        self.screenshotUrl = screenshotDict.value(forKey: "850px") as! String
     }
     
 }

@@ -29,4 +29,30 @@ class NetWork: NSObject {
         return json!
     }
     
+//    func getPictureFromUrl(urlString: String) -> UIImage {
+//        let pictureURL = URL(string:urlString)!
+//        let session = URLSession(configuration: .default)
+//        var picture = UIImage()
+//       
+//        let downloadPicTask = session.dataTask(with: pictureURL) { (data, response, error) in
+//            if let e = error {
+//                print("Error downloading picture: \(e)")
+//            } else {
+//                if (response as? HTTPURLResponse) != nil {
+//                    if let imageData = data {
+//                        let image = UIImage(data: imageData)
+//                        picture = image!
+//                    } else {
+//                        print("Couldn't get image: Image is nil")
+//                    }
+//                } else {
+//                    print("Couldn't get response code for some reason")
+//                }
+//            }
+//        }
+//        downloadPicTask.resume()
+//
+//        return picture
+//    }
+
 }
