@@ -18,6 +18,10 @@ class ProductController: UIViewController {
         super.viewDidLoad()
         productView = Bundle.main.loadNibNamed("ProductView", owner: self, options: nil)?.last as! ProductView
         productView.addDataToProductView(product: self.product)
+    }
+    
+    override func viewDidLayoutSubviews() {
+//        self.scrollView.contentSize.height = productView.frame.size.height
         productView.frame = CGRect(x: 0,
                                    y: 0,
                                    width: self.scrollView.frame.size.width,
@@ -34,7 +38,7 @@ class ProductController: UIViewController {
         let myWebView:UIWebView = UIWebView(frame: CGRect(x:0,
                                                           y:(self.navigationController?.navigationBar.frame.size.height)!,
                                                           width: self.view.frame.size.width,
-                                                          height:self.view.frame.size.height))
+                                                          height:self.view.frame.size.height - (self.navigationController?.navigationBar.frame.size.height)!))
         myWebView.tag = 10
         self.view.addSubview(myWebView)
         myWebView.delegate = self

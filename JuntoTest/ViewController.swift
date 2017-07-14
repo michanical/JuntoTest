@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.cache = NSCache()
         self.getData()
         self.setTableViewSettings()
         self.createTitleButton()
@@ -55,6 +56,7 @@ class ViewController: UIViewController {
         tableView.refreshControl = refreshCtrl
         tableView?.delegate = self
         tableView?.dataSource = self
+        tableView.estimatedRowHeight = 190
     }
   
     override func didReceiveMemoryWarning() {
@@ -122,7 +124,7 @@ extension ViewController: UITableViewDataSource {
         return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 190
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 190
+//    }
 }

@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductView" customModule="JuntoTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="418"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="433"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="equ-TW-f2Z">
@@ -27,14 +27,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-rc-UmI">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-rc-UmI">
                     <rect key="frame" x="20" y="357" width="335" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="upvotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAx-n9-W2d">
-                    <rect key="frame" x="310" y="383" width="45" height="14.5"/>
+                    <rect key="frame" x="310" y="398.5" width="45" height="14.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -47,7 +47,8 @@
                 <constraint firstItem="S8N-qB-mP0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="IXn-h6-eH7"/>
                 <constraint firstItem="SiW-rc-UmI" firstAttribute="top" secondItem="S8N-qB-mP0" secondAttribute="bottom" constant="8" id="Qbd-l5-hYm"/>
                 <constraint firstItem="SiW-rc-UmI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="RNL-37-xMT"/>
-                <constraint firstItem="sAx-n9-W2d" firstAttribute="top" secondItem="SiW-rc-UmI" secondAttribute="bottom" constant="8" id="VLN-nE-hcL"/>
+                <constraint firstItem="sAx-n9-W2d" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SiW-rc-UmI" secondAttribute="bottom" constant="8" id="VLN-nE-hcL"/>
+                <constraint firstAttribute="bottom" secondItem="sAx-n9-W2d" secondAttribute="bottom" constant="20" id="W4t-Al-CEN"/>
                 <constraint firstAttribute="trailing" secondItem="S8N-qB-mP0" secondAttribute="trailing" constant="20" id="Zki-8J-mYS"/>
                 <constraint firstItem="equ-TW-f2Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="eGC-TP-fTc"/>
                 <constraint firstItem="S8N-qB-mP0" firstAttribute="top" secondItem="equ-TW-f2Z" secondAttribute="bottom" constant="8" id="fe9-EA-rVa"/>
@@ -61,7 +62,7 @@
                 <outlet property="tagline" destination="SiW-rc-UmI" id="IKh-1B-hB0"/>
                 <outlet property="upvotes" destination="sAx-n9-W2d" id="Ftx-5y-a5P"/>
             </connections>
-            <point key="canvasLocation" x="24.5" y="-72"/>
+            <point key="canvasLocation" x="24.5" y="-64.5"/>
         </view>
     </objects>
 </document>
