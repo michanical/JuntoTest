@@ -11,11 +11,13 @@ import Foundation
 class ProductCategory: NSObject {
     
     var name: String!
+    var slug: String!
     
     init(newCategory: NSDictionary) {
         super.init()
         
         self.name = newCategory.value(forKey: "name") as! String
+        self.slug = newCategory.value(forKey: "slug") as! String
     }
     
 }

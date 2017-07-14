@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var currentCategory = "Tech"
+    private var currentCategory = "tech"
     
     override func viewDidLoad() {
         super.viewDidLoad()
