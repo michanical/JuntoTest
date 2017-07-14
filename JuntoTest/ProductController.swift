@@ -18,13 +18,11 @@ class ProductController: UIViewController {
         super.viewDidLoad()
         productView = Bundle.main.loadNibNamed("ProductView", owner: self, options: nil)?.last as! ProductView
         productView.addDataToProductView(product: self.product)
-    }
-    
-    override func viewDidLayoutSubviews() {
         productView.frame = CGRect(x: 0,
                                    y: 0,
                                    width: self.scrollView.frame.size.width,
                                    height: self.scrollView.frame.size.height)
+        productView.updateConstraints()
         self.scrollView.addSubview(productView)
     }
 
@@ -47,6 +45,7 @@ class ProductController: UIViewController {
     
     @IBAction func getItButtonPressed(_ sender: Any) {
         self.openWebView(urlString: product.websiteUrl)
+        print(scrollView.frame.size.height)
     }
     
     func closeWebView() {
