@@ -18,6 +18,9 @@
 		B48CB0481F180D5600D35E61 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CB0471F180D5600D35E61 /* ProductViewCell.swift */; };
 		B48CB04A1F180D7E00D35E61 /* ProductViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48CB0491F180D7E00D35E61 /* ProductViewCell.xib */; };
 		B48CB04D1F180F8F00D35E61 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CB04C1F180F8F00D35E61 /* Product.swift */; };
+		B48CB0501F18D36D00D35E61 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CB04F1F18D36D00D35E61 /* ProductController.swift */; };
+		B48CB0531F18D63F00D35E61 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CB0521F18D63F00D35E61 /* ProductView.swift */; };
+		B48CB0551F18D64700D35E61 /* ProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48CB0541F18D64700D35E61 /* ProductView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		B48CB0471F180D5600D35E61 /* ProductViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductViewCell.swift; path = View/ProductViewCell.swift; sourceTree = "<group>"; };
 		B48CB0491F180D7E00D35E61 /* ProductViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductViewCell.xib; path = View/ProductViewCell.xib; sourceTree = "<group>"; };
 		B48CB04C1F180F8F00D35E61 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B48CB04F1F18D36D00D35E61 /* ProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
+		B48CB0521F18D63F00D35E61 /* ProductView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		B48CB0541F18D64700D35E61 /* ProductView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductView.xib; sourceTree = "<group>"; };
 		CD317B8BB8A877CF4E1333C2 /* Pods-JuntoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTest/Pods-JuntoTest.release.xcconfig"; sourceTree = "<group>"; };
 		DB42FC946A7C954BCD41CF46 /* Pods-JuntoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuntoTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuntoTestTests/Pods-JuntoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				B47D3EA81F16651F00BFAEE9 /* AppDelegate.swift */,
-				B47D3EAA1F16651F00BFAEE9 /* ViewController.swift */,
+				B48CB04E1F18D31000D35E61 /* Controller */,
 				B47D3ED61F16885B00BFAEE9 /* NetWork.swift */,
 				B48CB0451F1802E700D35E61 /* ProductHunt.swift */,
 				B48CB04B1F180D8F00D35E61 /* View */,
@@ -147,10 +153,37 @@
 		B48CB04B1F180D8F00D35E61 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B48CB0561F18D64B00D35E61 /* ProductView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B48CB04E1F18D31000D35E61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B47D3EAA1F16651F00BFAEE9 /* ViewController.swift */,
+				B48CB04F1F18D36D00D35E61 /* ProductController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B48CB0511F18D61800D35E61 /* ProductViewCell */ = {
+			isa = PBXGroup;
+			children = (
 				B48CB0471F180D5600D35E61 /* ProductViewCell.swift */,
 				B48CB0491F180D7E00D35E61 /* ProductViewCell.xib */,
 			);
-			name = View;
+			name = ProductViewCell;
+			sourceTree = "<group>";
+		};
+		B48CB0561F18D64B00D35E61 /* ProductView */ = {
+			isa = PBXGroup;
+			children = (
+				B48CB0511F18D61800D35E61 /* ProductViewCell */,
+				B48CB0521F18D63F00D35E61 /* ProductView.swift */,
+				B48CB0541F18D64700D35E61 /* ProductView.xib */,
+			);
+			name = ProductView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +307,7 @@
 				B48CB04A1F180D7E00D35E61 /* ProductViewCell.xib in Resources */,
 				B47D3EB31F16651F00BFAEE9 /* LaunchScreen.storyboard in Resources */,
 				B47D3EB01F16651F00BFAEE9 /* Assets.xcassets in Resources */,
+				B48CB0551F18D64700D35E61 /* ProductView.xib in Resources */,
 				B47D3EAE1F16651F00BFAEE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +456,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48CB0501F18D36D00D35E61 /* ProductController.swift in Sources */,
+				B48CB0531F18D63F00D35E61 /* ProductView.swift in Sources */,
 				B47D3EAB1F16651F00BFAEE9 /* ViewController.swift in Sources */,
 				B47D3EA91F16651F00BFAEE9 /* AppDelegate.swift in Sources */,
 				B48CB0461F1802E700D35E61 /* ProductHunt.swift in Sources */,
@@ -580,6 +616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JuntoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = michanical.JuntoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -593,6 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JuntoTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = michanical.JuntoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

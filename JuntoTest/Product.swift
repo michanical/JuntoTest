@@ -28,7 +28,7 @@ class Product: NSObject {
         let thubmnailDict = newProduct.value(forKey: "thumbnail") as! NSDictionary
         self.thumbnailUrl = thubmnailDict.value(forKey: "image_url") as! String
         let screenshotDict = newProduct.value(forKey: "screenshot_url") as! NSDictionary
-        self.screenshotUrl = screenshotDict.value(forKey: "850px") as! String
+        self.screenshotUrl = screenshotDict.value(forKey: "300px") as! String
     }
     
 }

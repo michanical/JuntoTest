@@ -91,11 +91,19 @@ class ViewController: UIViewController {
         self.present(optionMenu, animated: true, completion: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SelectedProduct" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let dvc = segue.destination as! ProductController
+                dvc.product = allProducts[indexPath.row]
+            }
+        }
+    }
 }
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.performSegue(withIdentifier: "SelectedProduct", sender: self)
     }
 }
 
