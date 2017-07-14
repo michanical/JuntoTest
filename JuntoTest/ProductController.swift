@@ -24,9 +24,7 @@ class ProductController: UIViewController {
         productView.frame = CGRect(x: 0,
                                    y: 0,
                                    width: self.scrollView.frame.size.width,
-                                   height: productView.frame.size.height)
-        self.scrollView.contentSize.height = productView.frame.size.height
-        productView.updateConstraints()
+                                   height: self.scrollView.frame.size.height)
         self.scrollView.addSubview(productView)
     }
 
