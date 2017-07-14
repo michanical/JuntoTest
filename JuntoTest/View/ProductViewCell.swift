@@ -25,13 +25,20 @@ class ProductViewCell: UITableViewCell {
     
     func addDataToProductView(product: Product) {
         self.thumbnail.image = UIImage(named: "Apple_logo_black.svg")
-        NetWork().getPictureFromUrl(urlString: product.thumbnailUrl) {
-            (result: UIImage) in
-            self.thumbnail.image = result
-        }
         name.text = product.name
         tageline.text = product.tagline
         upvotes.text = String(product.upvotes)
+    }
+    
+    func addDataToProductView(product: Product, picture: UIImage) {
+        thumbnail.image = picture
+        name.text = product.name
+        tageline.text = product.tagline
+        upvotes.text = String(product.upvotes)
+    }
+    
+    func addDataToProductView(picture: UIImage) {
+        thumbnail.image = picture
     }
 
 }

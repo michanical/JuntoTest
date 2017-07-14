@@ -21,11 +21,11 @@ class ProductController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-//        self.scrollView.contentSize.height = productView.frame.size.height
         productView.frame = CGRect(x: 0,
                                    y: 0,
                                    width: self.scrollView.frame.size.width,
-                                   height: self.scrollView.frame.size.height)
+                                   height: productView.frame.size.height)
+        self.scrollView.contentSize.height = productView.frame.size.height
         productView.updateConstraints()
         self.scrollView.addSubview(productView)
     }

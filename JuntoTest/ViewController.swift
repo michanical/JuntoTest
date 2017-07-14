@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var allProducts = [Product]()
     private var allCategories = [ProductCategory]()
     private let productHunt = ProductHunt()
+    let network = NetWork()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
     @objc private func updateProducts() {
         productHunt.getAllProduct(byCategorieName: currentCategory) {
             (result:[Product]) in
+            self.cache.removeAllObjects()
             self.allProducts = result
             self.tableView.reloadData()
             self.refreshCtrl.endRefreshing()
@@ -101,6 +103,10 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func cacheImage(img: UIImage,indexPath: IndexPath) {
+        self.cache.setObject(img, forKey: (indexPath as IndexPath).row as AnyObject)
+    }
 }
 
 extension ViewController: UITableViewDelegate {
@@ -118,13 +124,22 @@ extension ViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier:
             ProductViewCell.identifier, for: indexPath) as? ProductViewCell
         {
-            cell.addDataToProductView(product: allProducts[indexPath.row])
+            cell.tag = indexPath.row
+            if self.cache.object(forKey: (indexPath as NSIndexPath).row as AnyObject) != nil && cell.tag == indexPath.row {
+                let thumbnailPict = self.cache.object(forKey: (indexPath as NSIndexPath).row as AnyObject) as? UIImage
+                cell.addDataToProductView(product: allProducts[indexPath.row], picture: thumbnailPict!)
+            } else {
+                network.getPictureFromUrl(urlString: allProducts[indexPath.row].thumbnailUrl) {
+                    (result: UIImage) in
+                    self.cacheImage(img: result, indexPath: indexPath)
+                    if cell.tag == indexPath.row {
+                        cell.addDataToProductView(picture: result)
+                    }
+                }
+                cell.addDataToProductView(product: allProducts[indexPath.row])
+            }
             return cell
         }
         return UITableViewCell()
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 190
-//    }
 }
